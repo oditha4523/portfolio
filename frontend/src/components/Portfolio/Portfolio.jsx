@@ -238,15 +238,15 @@ const Portfolio = () => {
                 Schedule a consultation
               </a>
             </div>
-          </div>
 
-          <div className="process-steps">
-            {processSteps.map((step, index) => (
-              <div key={index} className="process-step">
-                <h3>{step.number}. {step.title}</h3>
-                <p>{step.description}</p>
-              </div>
-            ))}
+            <div className="process-steps">
+              {processSteps.map((step, index) => (
+                <div key={index} className="process-step">
+                  <h3>{step.number}. {step.title}</h3>
+                  <p>{step.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
