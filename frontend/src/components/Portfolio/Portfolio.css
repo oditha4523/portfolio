@@ -1,0 +1,441 @@
+/* Portfolio Sections CSS */
+.portfolio-sections {
+  background-color: var(--ast-global-color-4, #1a1a1a);
+  
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Header Styles */
+.section-header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.section-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--ast-global-color-6, #4f4f4f);
+  border-radius: 20px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+}
+
+.badge-icon {
+  color: var(--ast-global-color-0, #82ff1f);
+  width: 12px;
+  height: 12px;
+}
+
+.badge-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.section-badge span {
+  color: var(--ast-global-color-2, #ffffff);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-header h2 {
+  font-size: 80px;
+  font-size: 5rem;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1em;
+  letter-spacing: -3px;
+  color: var(--ast-global-color-2, #ffffff);
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Why Choose Me Section */
+.why-choose-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  height: 75vh;
+}
+
+/* Why Choose Me Section Specific Styling */
+.why-choose-section .section-header h2 {
+  color: #000000;
+}
+
+.why-choose-section .section-badge {
+  border: 1px solid var(--ast-global-color-0, #82ff1f);
+  background-color: rgba(130, 255, 31, 0.1);
+}
+
+.why-choose-section .section-badge span {
+  color: #000000;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-icon {
+  color: var(--ast-global-color-0, #82ff1f);
+  background: var(--ast-global-color-5, #111111);
+  border-radius: 50%;
+  padding: 1rem;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.feature-content h4 {
+  color: #000000;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1em;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  letter-spacing: -1px;
+  margin: 0 0 0.5rem 0;
+}
+
+.feature-content p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 80px 0;
+  background-color: var(--ast-global-color-5, #111111);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio-item {
+  background-color: var(--ast-global-color-4, #1a1a1a);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-icon {
+  color: var(--ast-global-color-0, #82ff1f);
+  width: 16px;
+  height: 16px;
+}
+
+.project-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+.portfolio-header h6 {
+  color: var(--ast-global-color-2, #ffffff);
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.25em;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.project-year {
+  color: var(--ast-global-color-3, #f8f8f8);
+  font-size: 14px;
+}
+
+.portfolio-image {
+  width: 100%;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.portfolio-cta {
+  text-align: center;
+}
+
+/* Process Section */
+.process-section {
+  padding: 80px 0;
+  background-color: var(--ast-global-color-4, #1a1a1a);
+}
+
+.process-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.process-step h3 {
+  color: var(--ast-global-color-2, #ffffff);
+  font-size: 32px;
+  font-size: 2rem;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1em;
+  letter-spacing: -1px;
+  margin: 0 0 1rem 0;
+}
+
+.process-step p {
+  color: var(--ast-global-color-3, #f8f8f8);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  background-color: var(--ast-global-color-5, #111111);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--ast-global-color-4, #1a1a1a);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.service-icon svg {
+  width: 60px;
+  height: auto;
+}
+
+.service-content h3 {
+  color: var(--ast-global-color-2, #ffffff);
+  font-size: 32px;
+  font-size: 2rem;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1em;
+  letter-spacing: -1px;
+  margin: 0 0 1rem 0;
+}
+
+.service-content p {
+  color: var(--ast-global-color-3, #f8f8f8);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.service-features li {
+  color: var(--ast-global-color-3, #f8f8f8);
+  font-size: 14px;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--ast-global-color-6, #4f4f4f);
+}
+
+.service-features li:last-child {
+  border-bottom: none;
+}
+
+/* Buttons */
+.cta-button,
+.service-button {
+  background-color: var(--ast-global-color-0, #82ff1f);
+  color: var(--ast-global-color-8, #2f2f2f);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover,
+.service-button:hover {
+  background-color: var(--ast-global-color-1, #c9ff90);
+  transform: translateY(-2px);
+}
+
+.button-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.button-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .section-header h2 {
+    font-size: 60px;
+    font-size: 3.75rem;
+    letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 921px) {
+  .portfolio-sections {
+    padding-top: 60px;
+  }
+
+  .why-choose-section,
+  .portfolio-section,
+  .process-section,
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    letter-spacing: -2px;
+  }
+
+  .features-grid,
+  .portfolio-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 544px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .feature-content h4 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+
+  .process-step h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+
+  .service-content h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
+/* CSS Variables */
+:root {
+  --ast-global-color-0: #82ff1f;
+  --ast-global-color-1: #c9ff90;
+  --ast-global-color-2: #ffffff;
+  --ast-global-color-3: #f8f8f8;
+  --ast-global-color-4: #1a1a1a;
+  --ast-global-color-5: #111111;
+  --ast-global-color-6: #4f4f4f;
+  --ast-global-color-7: #1a1a1a;
+  --ast-global-color-8: #2f2f2f;
+}
