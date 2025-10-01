@@ -1,3 +1,25 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Cultural Literature';
+  src: url('../../assets/Fonts/Cultural-Literature-Demo-BF684d3d082fa20.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global process-title class */
+.process-title {
+  font-family: 'Cultural Literature', 'Times New Roman', serif !important;
+  letter-spacing: 2px !important;
+}
+
+/* Specific styling for projects title - smaller font size */
+.projects-title {
+  font-family: 'Cultural Literature', 'Times New Roman', serif !important;
+  font-size: 0.7em !important;
+  letter-spacing: 2px !important;
+}
+
 /* Portfolio Sections CSS */
 .portfolio-sections {
   background-color: var(--ast-global-color-4, #1a1a1a);
@@ -135,7 +157,8 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
 }
@@ -379,6 +402,7 @@
   .portfolio-grid,
   .services-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .process-intro {

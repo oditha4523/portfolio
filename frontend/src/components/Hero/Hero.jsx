@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="hero-description elementor-element elementor-widget-text-editor elementor-hidden-mobile">
               <div className="elementor-widget-container">
                 <p>
-                  I blend artistry with cutting-edge technology to deliver websites that not only look stunning but also drive results.
+                  I craft seamless digital experiences by combining intuitive design with robust, scalable technology building applications that not only look great but also perform flawlessly.
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ const Hero = () => {
                           ></polyline>
                         </svg>
                       </span>
-                      <span className="elementor-button-text">Schedule a consultation</span>
+                      <span className="elementor-button-text">Full-stack Developer</span>
                     </span>
                   </a>
                 </div>

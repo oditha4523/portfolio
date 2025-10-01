@@ -88,6 +88,7 @@
 
 .footer-cta-button:hover {
   background-color: var(--ast-global-color-1, #c9ff90);
+  color: var(--ast-global-color-5, #111111);
   transform: translateY(-2px);
 }
 

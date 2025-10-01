@@ -8,11 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <img 
-                src="/images/White-Logo.svg" 
-                alt="Web Designer Portfolio" 
-                className="footer-logo-img"
-              />
+              <h1>oditha chamod</h1>
             </div>
             <p className="footer-description">
               I blend artistry with cutting-edge technology to deliver websites that not only look stunning but also drive results.
@@ -41,7 +37,7 @@ const Footer = () => {
                     <polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
                   </svg>
                 </span>
-                Schedule a consultation
+                odithachamod@gmail.com
               </a>
             </div>
           </div>
@@ -49,7 +45,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>&copy; 2025 Wilson Brock. All rights reserved.</p>
+            <p>&copy; 2025 oditha chamod. All rights reserved.</p>
           </div>
           <div className="footer-badge">
             <div className="badge-icon">

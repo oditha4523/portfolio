@@ -5,21 +5,27 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: "Project Name Here",
-      year: "2023",
+      title: "Back2Me",
+      year: "2025",
       image: "/images/Portfolio-Img-2.png"
     },
     {
       id: 2,
-      title: "Project Name Here", 
-      year: "2023",
+      title: "Travel Web", 
+      year: "2024",
       image: "/images/Project-Pic-1.png"
     },
     {
       id: 3,
-      title: "Project Name Here",
-      year: "2023", 
+      title: "LearnFlow",
+      year: "2025", 
       image: "/images/Portfolio-Img-4.png"
+    },
+    {
+      id: 4,
+      title: "Vehicle Allocation system",
+      year: "2025", 
+      image: "/images/Portfolio-Img-2.png"
     }
   ];
 
@@ -27,22 +33,22 @@ const Portfolio = () => {
     {
       number: "1",
       title: "Discovery",
-      description: "I dive deep into understanding your brand, goals, and target audience. Through detailed consultations and research, I gather essential insights that inform the entire design process."
+      description: "I start by analyzing project requirements, exploring the problem space, and studying relevant technologies to build a solid foundation for development."
     },
     {
       number: "2", 
       title: "Design",
-      description: "I begin crafting visually compelling and strategic designs. This step focuses on translating ideas into tangible visual concepts that align with your brand."
+      description: "I translate ideas into wireframes, system designs, and database models, ensuring both user experience and technical feasibility are aligned."
     },
     {
       number: "3",
       title: "Development", 
-      description: "I transform the visuals into a fully functional website. This phase involves meticulous coding and integration to ensure your site is responsive and performs seamlessly across devices."
+      description: "I bring the designs to life through full-stack development—building responsive front-end interfaces and robust back-end systems."
     },
     {
       number: "4",
       title: "Launch",
-      description: "I rigorously test the website to ensure everything functions flawlessly before going live. Post-launch, I provide support and guidance to help you maximize your new online presence."
+      description: "I perform thorough testing to ensure performance, security, and scalability before deploying the project. I also reflect on outcomes to continuously improve future work."
     }
   ];
 
@@ -56,7 +62,7 @@ const Portfolio = () => {
         </svg>
       ),
       title: "Tailored Design",
-      description: "I believe that every brand is unique and deserves a website that is just as distinctive."
+      description: "I build custom applications and websites that align perfectly with your brand and goals."
     },
     {
       icon: (
@@ -66,7 +72,7 @@ const Portfolio = () => {
         </svg>
       ),
       title: "User-Centric Approach", 
-      description: "With a strong focus on user experience, I design websites that are intuitive and easy to navigate."
+      description: "From front-end design to back-end architecture, I focus on creating experiences that are intuitive, efficient, and enjoyable for users."
     },
     {
       icon: (
@@ -75,7 +81,7 @@ const Portfolio = () => {
         </svg>
       ),
       title: "Trending Technologies",
-      description: "I stay up-to-date with the latest web technologies and design trends to deliver modern solutions."
+      description: "I stay ahead with the latest frameworks, tools, and best practices ensuring your solution is modern, scalable, and future ready."
     }
   ];
 
@@ -99,14 +105,14 @@ const Portfolio = () => {
     {
       title: "Development", 
       description: "I bring your designs to life with clean, efficient, and high-performing code.",
-      features: ["HTML, CSS, & JS Expertise", "Cross-Browser Compatibility", "Faster Load Times"],
+      features: ["MERN Expertise", "Cross-Browser Compatibility", "Faster Load Times"],
       icon: (
-        <svg width="63" height="62" viewBox="0 0 63 62" fill="none">
-          <path d="M0.5 31C0.5 13.8788 14.3788 0 31.5 0C31.5 0 31.5 31 0.5 31ZM0.5 31C0.5 48.1212 14.3788 62 31.5 62C31.5 62 31.5 31 0.5 31ZM31.5 62C48.6206 62 62.5 48.1212 62.5 31C31.5 31 31.5 62 31.5 62ZM62.5 31C62.5 13.8788 48.6206 0 31.5 0C31.5 0 31.5 31 62.5 31Z" fill="url(#paint0_linear_52_26)"/>
+        <svg width="125" height="62" viewBox="0 0 125 62" fill="none">
+          <path d="M62.5 31C62.5 48.0863 48.6488 61.9375 31.5625 61.9375C14.4762 61.9375 0.625 48.0863 0.625 31C0.625 13.9137 14.4762 0.0625 31.5625 0.0625C48.6488 0.0625 62.5 13.9137 62.5 31ZM62.5 61.9375C79.5863 61.9375 93.4375 48.0863 93.4375 31C93.4375 13.9137 79.5863 0.0625 62.5 0.0625V61.9375ZM93.4375 61.9375C110.524 61.9375 124.375 48.0863 124.375 31C124.375 13.9137 110.524 0.0625 93.4375 0.0625V61.9375Z" fill="url(#paint0_linear_50_250)"/>
           <defs>
-            <linearGradient id="paint0_linear_52_26" x1="31.5" y1="0" x2="31.5" y2="62" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#F8F8F8" stopOpacity="0.8"/>
-              <stop offset="1" stopColor="#D1D1D1" stopOpacity="0.2"/>
+            <linearGradient id="paint0_linear_50_250" x1="0.625" y1="31" x2="124.375" y2="31" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#A4FF50"/>
+              <stop offset="1" stopColor="#E3FFC4"/>
             </linearGradient>
           </defs>
         </svg>
@@ -114,15 +120,15 @@ const Portfolio = () => {
     },
     {
       title: "Brand Identity",
-      description: "Building a strong brand identity is essential for standing out in a crowded market.",
-      features: ["Logo Design", "Cohesive Color Palettes", "Brand Guidelines"],
+      description: "Creating responsive, interactive, and user-friendly interfaces using modern frameworks and libraries.",
+      features: ["Front-End Development", "back-End Development", "Database Management"],
       icon: (
-        <svg width="63" height="62" viewBox="0 0 63 62" fill="none">
-          <path d="M9.66741 19.1937C9.31866 19.1322 8.96325 19.1011 8.6111 19.1011C5.67009 19.1011 3.16453 21.2056 2.65327 24.1051L0.592609 35.792C0.0128096 39.0798 2.21612 42.2263 5.50395 42.8061C5.8527 42.8676 6.20811 42.8988 6.56025 42.8988C9.50103 42.8988 12.0068 40.7941 12.5181 37.8948L14.5789 26.2079C15.1584 22.9199 12.9552 19.7735 9.66741 19.1937Z" fill="url(#paint0_linear_53_62)"/>
+        <svg width="125" height="62" viewBox="0 0 125 62" fill="none">
+          <path d="M62.5 31C62.5 48.0863 48.6488 61.9375 31.5625 61.9375C14.4762 61.9375 0.625 48.0863 0.625 31C0.625 13.9137 14.4762 0.0625 31.5625 0.0625C48.6488 0.0625 62.5 13.9137 62.5 31ZM62.5 61.9375C79.5863 61.9375 93.4375 48.0863 93.4375 31C93.4375 13.9137 79.5863 0.0625 62.5 0.0625V61.9375ZM93.4375 61.9375C110.524 61.9375 124.375 48.0863 124.375 31C124.375 13.9137 110.524 0.0625 93.4375 0.0625V61.9375Z" fill="url(#paint0_linear_50_250)"/>
           <defs>
-            <linearGradient id="paint0_linear_53_62" x1="7.58571" y1="19.1011" x2="7.58571" y2="42.8988" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#B0B0B0"/>
-              <stop offset="1" stopColor="#D1D1D1" stopOpacity="0.8"/>
+            <linearGradient id="paint0_linear_50_250" x1="0.625" y1="31" x2="124.375" y2="31" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#A4FF50"/>
+              <stop offset="1" stopColor="#E3FFC4"/>
             </linearGradient>
           </defs>
         </svg>
@@ -175,7 +181,7 @@ const Portfolio = () => {
               </div>
               <span>Featured Work</span>
             </div>
-            <h2>Recent Projects</h2>
+            <h2>Recent <span className="projects-title">projects</span></h2>
           </div>
 
           <div className="portfolio-grid">
@@ -200,17 +206,6 @@ const Portfolio = () => {
             ))}
           </div>
 
-          <div className="portfolio-cta">
-            <a href="#contact" className="cta-button">
-              <span className="button-icon">
-                <svg viewBox="0 0 256 256">
-                  <polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
-                  <polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
-                </svg>
-              </span>
-              Browse all work
-            </a>
-          </div>
         </div>
       </section>
 
@@ -242,7 +237,7 @@ const Portfolio = () => {
             <div className="process-steps">
               {processSteps.map((step, index) => (
                 <div key={index} className="process-step">
-                  <h3>{step.number}. {step.title}</h3>
+                  <h3>{step.number}. <span className="process-title">{step.title}</span></h3>
                   <p>{step.description}</p>
                 </div>
               ))}
@@ -263,7 +258,7 @@ const Portfolio = () => {
               </div>
               <span>What I Offer</span>
             </div>
-            <h2>Empowering Brands Through Design</h2>
+            <h2>Building Scalable Solutions with Full-Stack Development</h2>
           </div>
 
           <div className="services-grid">
@@ -273,22 +268,14 @@ const Portfolio = () => {
                   {service.icon}
                 </div>
                 <div className="service-content">
-                  <h3>{service.title}</h3>
+                  <h3 className="process-title">{service.title}</h3>
                   <p>{service.description}</p>
                   <ul className="service-features">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex}>{feature}</li>
                     ))}
                   </ul>
-                  <a href="#contact" className="service-button">
-                    <span className="button-icon">
-                      <svg viewBox="0 0 256 256">
-                        <polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
-                        <polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
-                      </svg>
-                    </span>
-                    Schedule a consultation
-                  </a>
+                  
                 </div>
               </div>
             ))}
