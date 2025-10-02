@@ -1,31 +1,37 @@
 import React from 'react';
 import './Portfolio.css';
 
+// Import images
+import back2meImg from '../../assets/projects/back2me.jpg';
+import travelWebImg from '../../assets/projects/Travel-web.jpg';
+import learnflowImg from '../../assets/projects/learnflow.jpg';
+import foodWebImg from '../../assets/projects/food-web.png';
+
 const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
       title: "Back2Me",
       year: "2025",
-      image: "/images/Portfolio-Img-2.png"
+      image: back2meImg
     },
     {
       id: 2,
       title: "Travel Web", 
       year: "2024",
-      image: "/images/Project-Pic-1.png"
+      image: travelWebImg
     },
     {
       id: 3,
       title: "LearnFlow",
       year: "2025", 
-      image: "/images/Portfolio-Img-4.png"
+      image: learnflowImg
     },
     {
       id: 4,
       title: "Vehicle Allocation system",
       year: "2025", 
-      image: "/images/Portfolio-Img-2.png"
+      image: foodWebImg
     }
   ];
 
