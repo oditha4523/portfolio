@@ -1,0 +1,37 @@
+/* Global CSS Reset and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ast-global-color-3, #f8f8f8);
+  background-color: var(--ast-global-color-4, #1a1a1a);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* CSS Variables */
+:root {
+  --ast-global-color-0: #82ff1f;
+  --ast-global-color-1: #c9ff90;
+  --ast-global-color-2: #ffffff;
+  --ast-global-color-3: #f8f8f8;
+  --ast-global-color-4: #1a1a1a;
+  --ast-global-color-5: #111111;
+  --ast-global-color-6: #4f4f4f;
+  --ast-global-color-7: #1a1a1a;
+  --ast-global-color-8: #2f2f2f;
+}
