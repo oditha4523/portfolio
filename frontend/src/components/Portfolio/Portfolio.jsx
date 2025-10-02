@@ -1,5 +1,6 @@
 import React from 'react';
 import './Portfolio.css';
+import { useIntersectionObserver } from '../../utils/useIntersectionObserver';
 
 // Import images
 import back2meImg from '../../assets/projects/back2me.jpg';
@@ -8,30 +9,39 @@ import learnflowImg from '../../assets/projects/learnflow.jpg';
 import foodWebImg from '../../assets/projects/food-web.png';
 
 const Portfolio = () => {
+  // Intersection observer hooks for animations
+  const [whyChooseRef, whyChooseVisible] = useIntersectionObserver();
+  const [portfolioRef, portfolioVisible] = useIntersectionObserver();
+  const [processRef, processVisible] = useIntersectionObserver();
+  const [servicesRef, servicesVisible] = useIntersectionObserver();
   const portfolioItems = [
     {
       id: 1,
       title: "Back2Me",
       year: "2025",
-      image: back2meImg
+      image: back2meImg,
+      link: "https://www.linkedin.com/posts/oditha-chamod-b92525305_back2me-lostandfound-reactjs-activity-7378678188769693696--Zzd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3all4B09I3XWOTElT9uElnYO4Ko6MZq6M"
     },
     {
       id: 2,
       title: "Travel Web", 
       year: "2024",
-      image: travelWebImg
+      image: travelWebImg,
+      link : "https://www.linkedin.com/posts/oditha-chamod-b92525305_responsivedesign-webdevelopment-html-activity-7318209393429286912-u0ak?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3all4B09I3XWOTElT9uElnYO4Ko6MZq6M"
     },
     {
       id: 3,
       title: "LearnFlow",
       year: "2025", 
-      image: learnflowImg
+      image: learnflowImg,
+      link: "https://www.linkedin.com/posts/oditha-chamod-b92525305_ai-langchain-rag-activity-7373230692077580288--Nq3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3all4B09I3XWOTElT9uElnYO4Ko6MZq6M"
     },
     {
       id: 4,
       title: "Food web",
       year: "2025", 
-      image: foodWebImg
+      image: foodWebImg,
+      link : "https://www.linkedin.com/posts/oditha-chamod-b92525305_webdevelopment-javascript-foodrecipes-activity-7309226936554192896-zVFg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3all4B09I3XWOTElT9uElnYO4Ko6MZq6M"
     }
   ];
 
@@ -145,9 +155,13 @@ const Portfolio = () => {
   return (
     <div className="portfolio-sections">
       {/* Why Choose Me Section */}
-      <section className="why-choose-section" id="about">
+      <section 
+        ref={whyChooseRef} 
+        className={`why-choose-section ${whyChooseVisible ? 'animate-in' : ''}`} 
+        id="about"
+      >
         <div className="container">
-          <div className="section-header">
+          <div className="section-header animate-slide-up" style={{'--delay': '0.1s'}}>
             <div className="section-badge">
               <div className="badge-icon">
                 <svg viewBox="0 0 512 512">
@@ -161,7 +175,11 @@ const Portfolio = () => {
           
           <div className="features-grid">
             {whyChooseFeatures.map((feature, index) => (
-              <div key={index} className="feature-card">
+              <div 
+                key={index} 
+                className={`feature-card animate-fade-in`} 
+                style={{'--delay': `${0.3 + index * 0.2}s`}}
+              >
                 <div className="feature-icon">
                   {feature.icon}
                 </div>
@@ -176,9 +194,13 @@ const Portfolio = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section className="portfolio-section" id="projects">
+      <section 
+        ref={portfolioRef} 
+        className={`portfolio-section ${portfolioVisible ? 'animate-in' : ''}`} 
+        id="projects"
+      >
         <div className="container">
-          <div className="section-header">
+          <div className="section-header animate-slide-up" style={{'--delay': '0.1s'}}>
             <div className="section-badge">
               <div className="badge-icon">
                 <svg viewBox="0 0 512 512">
@@ -191,23 +213,49 @@ const Portfolio = () => {
           </div>
 
           <div className="portfolio-grid">
-            {portfolioItems.map((item) => (
-              <div key={item.id} className="portfolio-item">
-                <div className="portfolio-header">
-                  <div className="project-info">
-                    <div className="project-icon">
-                      <svg viewBox="0 0 256 256">
-                        <polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
-                        <polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
-                      </svg>
+            {portfolioItems.map((item, index) => (
+              <div 
+                key={item.id} 
+                className={`portfolio-item animate-scale-in`} 
+                style={{'--delay': `${0.3 + index * 0.15}s`}}
+              >
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                    <div className="portfolio-header">
+                      <div className="project-info">
+                        <div className="project-icon">
+                          <svg viewBox="0 0 256 256">
+                            <polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
+                            <polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
+                          </svg>
+                        </div>
+                        <h6>{item.title}</h6>
+                      </div>
+                      <span className="project-year">{item.year}</span>
                     </div>
-                    <h6>{item.title}</h6>
-                  </div>
-                  <span className="project-year">{item.year}</span>
-                </div>
-                <div className="portfolio-image">
-                  <img src={item.image} alt={item.title} />
-                </div>
+                    <div className="portfolio-image">
+                      <img src={item.image} alt={item.title} />
+                    </div>
+                  </a>
+                ) : (
+                  <>
+                    <div className="portfolio-header">
+                      <div className="project-info">
+                        <div className="project-icon">
+                          <svg viewBox="0 0 256 256">
+                            <polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
+                            <polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
+                          </svg>
+                        </div>
+                        <h6>{item.title}</h6>
+                      </div>
+                      <span className="project-year">{item.year}</span>
+                    </div>
+                    <div className="portfolio-image">
+                      <img src={item.image} alt={item.title} />
+                    </div>
+                  </>
+                )}
               </div>
             ))}
           </div>

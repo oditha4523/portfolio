@@ -15,6 +15,41 @@
   position: relative;
   padding: 100px 20px 40px;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero-section.animate-in {
+  opacity: 1;
+}
+
+/* Animation Classes */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  animation-delay: var(--delay, 0s);
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease;
+  animation-delay: var(--delay, 0s);
+}
+
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease;
+  animation-delay: var(--delay, 0s);
+}
+
+.hero-section.animate-in .animate-slide-up,
+.hero-section.animate-in .animate-fade-in,
+.hero-section.animate-in .animate-scale-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .e-con-inner {

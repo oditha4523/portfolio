@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation on component mount
+    setIsLoaded(true);
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <header className="site-header" id="masthead">
+    <header className={`site-header ${isLoaded ? 'animate-in' : ''}`} id="masthead">
       {/* Desktop Header */}
       <div id="ast-desktop-header" className="desktop-header">
         <div className="ast-main-header-wrap">
@@ -17,7 +23,7 @@ const Header = () => {
             <div className="site-primary-header-wrap ast-container">
               <div className="ast-builder-grid-row">
                 {/* Logo Section */}
-                <div className="site-header-primary-section-left">
+                <div className="site-header-primary-section-left animate-slide-in-left">
                   <div className="site-branding">
                     <span className="site-logo-text">
                       <a href="#" className="custom-logo-link">
@@ -28,32 +34,29 @@ const Header = () => {
                 </div>
 
                 {/* Navigation and Button Section */}
-                <div className="site-header-primary-section-right">
+                <div className="site-header-primary-section-right animate-slide-in-right">
                   {/* Desktop Navigation */}
                   <div className="ast-builder-menu-1">
                     <nav className="site-navigation">
                       <ul className="main-header-menu">
-                        <li className="menu-item current-menu-item">
+                        <li className="menu-item current-menu-item animate-fade-in" style={{'--delay': '0.1s'}}>
                           <a href="#" className="menu-link">Home</a>
                         </li>
-                        <li className="menu-item">
+                        <li className="menu-item animate-fade-in" style={{'--delay': '0.2s'}}>
                           <a href="#about" className="menu-link">About</a>
                         </li>
-                        <li className="menu-item">
+                        <li className="menu-item animate-fade-in" style={{'--delay': '0.3s'}}>
                           <a href="#projects" className="menu-link">Projects</a>
                         </li>
-                        <li className="menu-item">
+                        <li className="menu-item animate-fade-in" style={{'--delay': '0.4s'}}>
                           <a href="#services" className="menu-link">Services</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#contact" className="menu-link">Contact</a>
                         </li>
                       </ul>
                     </nav>
                   </div>
 
                   {/* Contact Button */}
-                  <div className="ast-header-button-1">
+                  <div className="ast-header-button-1 animate-scale-in" style={{'--delay': '0.5s'}}>
                     <div className="ast-builder-button-wrap">
                       <a className="ast-custom-button-link" href="#contact">
                         <div className="ast-custom-button">Contact Me</div>

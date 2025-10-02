@@ -5,6 +5,49 @@
   right: 0;
   z-index: 999;
   background: transparent;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.8s ease;
+}
+
+.site-header.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation Classes */
+.animate-slide-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease;
+}
+
+.animate-slide-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+  animation-delay: var(--delay, 0s);
+}
+
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+  animation-delay: var(--delay, 0s);
+}
+
+.site-header.animate-in .animate-slide-in-left,
+.site-header.animate-in .animate-slide-in-right,
+.site-header.animate-in .animate-fade-in,
+.site-header.animate-in .animate-scale-in {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
 }
 
 .ast-container {
