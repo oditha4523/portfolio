@@ -264,10 +264,13 @@ const Portfolio = () => {
       </section>
 
       {/* Process Section */}
-      <section className="process-section">
+      <section 
+        ref={processRef} 
+        className={`process-section ${processVisible ? 'animate-in' : ''}`}
+      >
         <div className="container">
           <div className="process-intro">
-            <div className="section-header">
+            <div className="section-header animate-slide-up" style={{'--delay': '0.1s'}}>
               <div className="section-badge">
                 <div className="badge-icon">
                   <svg viewBox="0 0 512 512">
@@ -277,7 +280,7 @@ const Portfolio = () => {
                 <span>my Process</span>
               </div>
               <h2>My Creative Workflow</h2>
-              <a href="#contact" className="cta-button">
+              <a href="#contact" className="cta-button animate-scale-in" style={{'--delay': '0.3s'}}>
                 <span className="button-icon">
                   <svg viewBox="0 0 256 256">
                     <polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"/>
@@ -290,7 +293,11 @@ const Portfolio = () => {
 
             <div className="process-steps">
               {processSteps.map((step, index) => (
-                <div key={index} className="process-step">
+                <div 
+                  key={index} 
+                  className="process-step animate-fade-in" 
+                  style={{'--delay': `${0.5 + index * 0.2}s`}}
+                >
                   <h3>{step.number}. <span className="process-title">{step.title}</span></h3>
                   <p>{step.description}</p>
                 </div>
@@ -301,9 +308,13 @@ const Portfolio = () => {
       </section>
 
       {/* Services Section */}
-      <section className="services-section" id="services">
+      <section 
+        ref={servicesRef} 
+        className={`services-section ${servicesVisible ? 'animate-in' : ''}`} 
+        id="services"
+      >
         <div className="container">
-          <div className="section-header">
+          <div className="section-header animate-slide-up" style={{'--delay': '0.1s'}}>
             <div className="section-badge">
               <div className="badge-icon">
                 <svg viewBox="0 0 512 512">
@@ -317,7 +328,11 @@ const Portfolio = () => {
 
           <div className="services-grid">
             {services.map((service, index) => (
-              <div key={index} className="service-card">
+              <div 
+                key={index} 
+                className="service-card animate-scale-in" 
+                style={{'--delay': `${0.3 + index * 0.2}s`}}
+              >
                 <div className="service-icon">
                   {service.icon}
                 </div>

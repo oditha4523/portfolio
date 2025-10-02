@@ -56,7 +56,7 @@ const Hero = () => {
           {/* Content Container */}
           <div className="hero-content e-con-full e-flex e-con e-child">
             {/* Description Text */}
-            <div className="hero-description elementor-element elementor-widget-text-editor elementor-hidden-mobile animate-fade-in" style={{'--delay': '0.6s'}}>
+            <div className="hero-description elementor-element elementor-widget-text-editor animate-fade-in" style={{'--delay': '0.6s'}}>
               <div className="elementor-widget-container">
                 <p>
                   I craft seamless digital experiences by combining intuitive design with robust, scalable technology building applications that not only look great but also perform flawlessly.
@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="hero-button elementor-element elementor-widget-button elementor-hidden-mobile animate-scale-in" style={{'--delay': '0.8s'}}>
+            <div className="hero-button elementor-element elementor-widget-button animate-scale-in" style={{'--delay': '0.8s'}}>
               <div className="elementor-widget-container">
                 <div className="elementor-button-wrapper">
                   <a 

@@ -207,21 +207,47 @@
     transform: translate(50%, -50%);
     width: 500px;
   }
+  
+  .hero-section {
+    padding: 80px 20px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .elementor-heading-title {
+    font-size: clamp(2.2rem, 9vw, 8rem);
+  }
+  
+  .hero-description p {
+    font-size: 15px;
+    max-width: 350px;
+  }
+  
+  .hero-image {
+    width: 450px;
+  }
 }
 
 @media (max-width: 921px) {
   .hero-section {
-    padding-top: 100px;
+    padding: 90px 20px 40px;
     text-align: center;
+    min-height: 90vh;
   }
 
   .e-con-inner {
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
   }
 
   .hero-left-content {
     max-width: 100%;
+    gap: 1.5rem;
+  }
+
+  .hero-badge {
+    margin-bottom: 1.5rem;
   }
 
   .hero-image {
@@ -230,43 +256,215 @@
     top: auto;
     transform: none;
     order: -1;
-    margin-bottom: 1rem;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto 2rem;
+    max-width: 380px;
+    margin: 0 auto;
   }
 
   .elementor-heading-title {
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2.5rem, 10vw, 4.5rem);
     letter-spacing: -0.03em;
+    margin-bottom: 1rem;
   }
 
-  .hero-description,
-  .hero-button {
-    display: none; /* Hidden on mobile as per original design */
+  .hero-description p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .hero-button .elementor-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .elementor-button-icon svg {
+    width: 14px;
+    height: 14px;
   }
 
   .hero-image img {
-    max-height: 60vh;
+    max-height: 55vh;
+  }
+  
+  /* Show mobile-specific content */
+  .hero-content {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 15px 30px;
+    min-height: 85vh;
+  }
+  
+  .elementor-heading-title {
+    font-size: clamp(2.2rem, 9vw, 3.8rem);
+    line-height: 0.9;
+  }
+  
+  .hero-image {
+    max-width: 320px;
+  }
+  
+  .hero-image img {
+    max-height: 50vh;
+  }
+  
+  .elementor-icon-box-wrapper {
+    padding: 6px 14px;
+  }
+  
+  .elementor-icon-box-title span {
+    font-size: 13px;
+  }
+
+  .hero-description p {
+    font-size: 13px;
+    max-width: 260px;
+  }
+
+  .hero-button .elementor-button {
+    padding: 7px 14px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 544px) {
   .hero-section {
-    padding: 80px 15px 30px;
+    padding: 70px 15px 25px;
+    min-height: 80vh;
   }
 
   .elementor-heading-title {
-    font-size: clamp(1.875rem, 6vw, 1.875rem);
+    font-size: clamp(1.8rem, 8vw, 3rem);
     letter-spacing: -0.02em;
+    line-height: 0.85;
   }
 
   .hero-image {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .hero-image img {
-    max-height: 50vh;
+    max-height: 45vh;
+  }
+  
+  .hero-badge {
+    margin-bottom: 1rem;
+  }
+  
+  .elementor-icon-box-wrapper {
+    padding: 5px 12px;
+    border-radius: 16px;
+  }
+  
+  .elementor-icon-box-icon svg {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .elementor-icon-box-title span {
+    font-size: 12px;
+  }
+  
+  .hero-left-content {
+    gap: 1rem;
+  }
+
+  .hero-description p {
+    font-size: 12px;
+    max-width: 240px;
+    line-height: 1.4;
+  }
+
+  .hero-button .elementor-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .elementor-button-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 10px 20px;
+    min-height: 75vh;
+  }
+  
+  .elementor-heading-title {
+    font-size: clamp(1.6rem, 7.5vw, 2.5rem);
+    letter-spacing: -0.01em;
+  }
+  
+  .hero-image {
+    max-width: 250px;
+  }
+  
+  .hero-image img {
+    max-height: 40vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section {
+    padding: 50px 10px 15px;
+    min-height: 70vh;
+  }
+  
+  .elementor-heading-title {
+    font-size: clamp(1.4rem, 7vw, 2.2rem);
+  }
+  
+  .hero-image {
+    max-width: 220px;
+  }
+  
+  .hero-image img {
+    max-height: 35vh;
+  }
+  
+  .e-con-inner {
+    gap: 1.5rem;
+  }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-width: 921px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 100vh;
+    padding: 60px 20px 20px;
+  }
+  
+  .e-con-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .hero-image {
+    order: 1;
+    max-width: 40%;
+    margin: 0;
+  }
+  
+  .hero-left-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .elementor-heading-title {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    text-align: left;
+  }
+  
+  .hero-badge {
+    align-self: flex-start;
   }
 }
 
@@ -292,13 +490,7 @@
   transform: translateY(-2px);
 }
 
-/* Hidden mobile class */
+/* Hidden mobile class - Updated to show elements on mobile */
 .elementor-hidden-mobile {
   display: block;
-}
-
-@media (max-width: 921px) {
-  .elementor-hidden-mobile {
-    display: none !important;
-  }
 }
