@@ -281,14 +281,29 @@
 /* Process Section */
 .process-section {
   padding: 80px 0;
-  background-color: var(--ast-global-color-4, #1a1a1a);
+  background-color: var(--ast-global-color-3, #f8f8f8);
+}
+
+/* Process Section Specific Styling */
+.process-section .section-header h2 {
+  color: var(--ast-global-color-8, #2f2f2f);
+}
+
+.process-section .section-badge {
+  border: 1px solid var(--ast-global-color-6, #4f4f4f);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.process-section .section-badge span {
+  color: var(--ast-global-color-8, #2f2f2f);
 }
 
 .process-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: start;
+  align-items: center;
+  min-height: 60vh;
 }
 
 .process-steps {
@@ -299,7 +314,7 @@
 }
 
 .process-step h3 {
-  color: var(--ast-global-color-2, #ffffff);
+  color: var(--ast-global-color-8, #2f2f2f);
   font-size: 32px;
   font-size: 2rem;
   font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -309,7 +324,7 @@
 }
 
 .process-step p {
-  color: var(--ast-global-color-3, #f8f8f8);
+  color: var(--ast-global-color-6, #4f4f4f);
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
