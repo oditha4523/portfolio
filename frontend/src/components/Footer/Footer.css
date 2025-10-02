@@ -39,8 +39,31 @@
   color: var(--ast-global-color-3, #f8f8f8);
   font-size: 16px;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   max-width: 300px;
+}
+
+/* Social Media Links */
+.social-media-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.social-link img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
 }
 
 /* Footer Navigation */

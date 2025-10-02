@@ -1,6 +1,10 @@
 import React from 'react';
 import './Footer.css';
 
+// Import social media icons
+import githubIcon from '../../assets/icons/github.png';
+import linkedInIcon from '../../assets/icons/linkedIn.png';
+
 const Footer = () => {
   return (
     <footer className="site-footer" id="contact">
@@ -13,6 +17,8 @@ const Footer = () => {
             <p className="footer-description">
               I blend artistry with cutting-edge technology to deliver websites that not only look stunning but also drive results.
             </p>
+            
+            
           </div>
           
           <div className="footer-section">
@@ -38,6 +44,14 @@ const Footer = () => {
                   </svg>
                 </span>
                 odithachamod@gmail.com
+              </a>
+            </div>
+            <div className="social-media-links">
+              <a href="https://github.com/oditha4523" target="_blank" rel="noopener noreferrer" className="social-link">
+                <img src={githubIcon} alt="GitHub" />
+              </a>
+              <a href="https://linkedin.com/in/oditha-chamod" target="_blank" rel="noopener noreferrer" className="social-link">
+                <img src={linkedInIcon} alt="LinkedIn" />
               </a>
             </div>
           </div>

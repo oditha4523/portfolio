@@ -29,7 +29,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Vehicle Allocation system",
+      title: "Food web",
       year: "2025", 
       image: foodWebImg
     }
